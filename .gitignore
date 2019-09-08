@@ -1,2 +1,9 @@
 # Archieve
 Archieve/
+
+# Tex
+*.aux
+*.fls
+*.fdb*
+*.log
+*.out
