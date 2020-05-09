@@ -95,8 +95,16 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
+      {M1 Finance}{Chicago, IL}
+      {Software Engineer}{Nov 2019 - Present}
+      \resumeItemListStart
+        \resumeItem{Performance}
+          {Performance is a Scala, Lagom, Akka, Kafka, SQS service that provides cashflow and performance calculations to our users (serves up more than 450 RPS under peak load). Refactored much of the core logic for dividends and trades, re-migrated tens of millions of records, and made the system more stable.}
+      \resumeItemListEnd
+
+    \resumeSubheading
       {University of Chicago: Center for Translational Data Science}{Chicago, IL}
-      {Software Engineer}{Apr 2019 - Present}
+      {Software Engineer}{Apr 2019 - Nov 2019}
       \resumeItemListStart
         \resumeItem{GDC API}
           {The GDC API is a Python-Flask system that handles over a 1 million downloads a month and over 10 petabytes of data downloaded annually. Implemented new features like admin endpoints and tarfile download of clinical data.}
@@ -104,8 +112,6 @@
           {Convert the reporting features of the GDC API into a microservice. Containerize and deploy the new microservice into various environments. Enhance batch processes to backfill data with additional information (ie. genomic experimental strategy).}
         \resumeItem{ESBuild}
           {ESBuild is a Python batch-layer system that creates the data for ElasticSearch indices. Refactored and improved caching and denormalization processes of the system improving memory consumption and runtime performance.}
-        \resumeItem{Python3 Upgrade}
-          {Migrate a number of systems to be Python3 compatible. Removed unnecessary internal dependencies and dead code, upgrade external libraries, fix compatibilities, and increase code coverage where necessary to test various code branches.}
       \resumeItemListEnd
 
     \resumeSubheading
