@@ -85,6 +85,9 @@
       {The University of Chicago}{Chicago, IL}
       {Master of Science in Computer Science;  GPA: 3.80}{Aug. 2017 -- Jun. 2019}
     \resumeSubheading
+      {Oregon State University}{Remote; Corvallis, OR}
+      {Post Baccalaureate in Computer Science;  GPA: 3.90}{Jun. 2016 -- Aug. 2017}
+    \resumeSubheading
       {Michigan State University}{East Lansing, MI}
       {Bachelor of Arts in Finance;  GPA: 3.50}{Aug. 2007 -- May. 2011}
   \resumeSubHeadingListEnd
@@ -96,15 +99,17 @@
 
     \resumeSubheading
       {M1 Finance}{Chicago, IL}
-      {Software Engineer}{Nov 2019 - Present}
+      {Software Engineer}{Nov 2019 - Present (0.7 years)}
       \resumeItemListStart
         \resumeItem{Performance}
-          {Performance is a Scala, Lagom, Akka, Kafka, SQS service that provides cashflow and performance calculations to our users (serves up more than 450 RPS under peak load). Refactored much of the core logic for dividends and trades, re-migrated tens of millions of records, and made the system more stable.}
+          {Performance is a Scala, Lagom, Akka, Kafka, SQS service that provides cashflow and performance calculations to our users (serves up more than 450 RPS under peak load). Refactored much of the core logic for money-weighted return calculations, dividend and trade cashflows, re-migrated tens of millions of records, and made the system more stable by handling network failures better and refactoring parts of the app to use a message-based architecture.}
+        \resumeItem{Fraud}
+          {Fraud is domain that is housed in multiple different backend services. The solutions I have helped build include: Plaid integrations to get external banking information; Socure integrations to risk-score users when we onboard them; and designed and developed a business-pattern for ACH transfers in/out of M1. All solutions described here use the following technologies: Scala, Lagom, Akka, and Kafka.}
       \resumeItemListEnd
 
     \resumeSubheading
       {University of Chicago: Center for Translational Data Science}{Chicago, IL}
-      {Software Engineer}{Apr 2019 - Nov 2019}
+      {Software Engineer}{Apr 2019 - Nov 2019 (0.6 years)}
       \resumeItemListStart
         \resumeItem{GDC API}
           {The GDC API is a Python-Flask system that handles over a 1 million downloads a month and over 10 petabytes of data downloaded annually. Implemented new features like admin endpoints and tarfile download of clinical data.}
@@ -116,7 +121,7 @@
 
     \resumeSubheading
       {UChicago Systems Research on Availability, Reliability, and Efficiency}{Chicago, IL}
-      {Research Assistant}{Nov 2018 - Apr 2019}
+      {Research Assistant}{Nov 2018 - May 2019 (0.5 years)}
       \resumeItemListStart
         \resumeItem{MittOS Memory}
           {Advised by Dr. Haryadi Gunawi and Cesar Stuardo. Research focus is on making distributed systems more performant by being able to signal to other machines that the JVM is in a stop-the-world garbage collection phase. Solutions implemented in OpenJDK 8, Java, and C++.}
@@ -124,7 +129,7 @@
 
     \resumeSubheading
       {National Opinion Research Center at the University of Chicago}{Chicago, IL}
-      {Software Developer}{Oct 2018 - Apr 2019}
+      {Software Developer}{Oct 2018 - Apr 2019 (0.5 years)}
       \resumeItemListStart
         \resumeItem{Getting on Track}
           {Getting on Track is an education application that helps teachers and social scientists measure nationwide kindergarten readiness. Maintained the application, implemented new features, and modernized the Django-JQuery application into separate front-and-backend applications (VueJS and Django-REST).}
@@ -132,7 +137,7 @@
 
     \resumeSubheading
       {Braintree (a Paypal Company)}{Chicago, IL}
-      {Data Operations}{Jun 2018 - Aug 2018}
+      {Data Operations}{Jun 2018 - Aug 2018 (0.2 years)}
       \resumeItemListStart
         \resumeItem{Batch Systems}
           {Develop batch systems for the data operations team to process over 12 trillion records. Aggregate various information sources (incidents and other operational data sources) to determine merchant satisfaction levels using a logistic regression model.}
@@ -140,7 +145,7 @@
 
     \resumeSubheading
       {Information Services Group (ISG)}{Detroit, MI; Stamford, CT; Chicago, IL}
-      {Consulting Manager}{Dec 2011 - Apr 2019}
+      {Consulting Manager}{Dec 2011 - Apr 2019 (8.4 years)}
       \resumeItemListStart
         \resumeItem{Strategy \& Technology Consulting}
           {Specialist in transaction advisory and cloud advisory. In my consulting career I have been ranked as a top-five consultant in the firm and have been awarded the chairman's club honor twice (an honor given to less than 2\% of the company annually).}
@@ -152,22 +157,21 @@
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{BeautyShelf}
+    \resumeSubItem{BeautyShelf (2019)}
       {Mobile and web application that keeps track of makeup expiry (\href{https://beautyshelf.app}{beautyshelf.app}). Developed the entire web front-and-backend systems in React, Flask (Python), Docker, and AWS.}
-    \resumeSubItem{Twitter-Stocks}
+    \resumeSubItem{Twitter-Stocks (2019)}
       {Big-data, Lambda architecture based system with ingestion, batch, serving, speed, and web layers. Built using Kafka, Spark (Scala), Hive, HBase, Flask (Python), and VueJS.}
   \resumeSubHeadingListEnd
 
-%
+
 %--------PROGRAMMING SKILLS------------
-%\section{Programming Skills}
-%  \resumeSubHeadingListStart
-%    \item{
-%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
-%      \hfill
-%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
-%    }
-%  \resumeSubHeadingListEnd
+\section{Programming Skills (Interests)}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Programming Languages}
+      {Scala, TypeScript, JavaScript, SQL, Python}
+    \resumeSubItem{Technologies}
+      {AWS, Kubernetes, Jenkins-X, CircleCI, Akka, Lagom, Play, PostgreSQL, NodeJS, React, Kafka}
+  \resumeSubHeadingListEnd
 
 
 %-------------------------------------------
