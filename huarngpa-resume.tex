@@ -97,13 +97,23 @@
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Amazon}{Seattle, WA}
-      {Software Development Engineer II}{Jan 2021 - Present}
+      {Amazon Web Services (AWS)}{Seattle, WA}
+      {Software Development Engineer II (EC2)}{Oct 2021 - Present}
       \resumeItemListStart
-        \resumeItem{LaunchPad (Monera)}
-          {LaunchPad is a TypeScript, NextJS, Java, GraphQL, RPC service that allows Amazon teams to develop custom, product detail pages using JSON and code artifacts. This service speeds up delivery and development of detail pages from quarters to mere weeks. My contributions towards this project is leading both frontend and backend development of the service, as well as leading customer onboarding and delivery into production.}
+        \resumeItem{Legion}
+          {Legion is a Java, Kotlin, Akka service that powers the EC2 core platform by ingesting and distributing real-time resource-mutation (ie. VPC, AMI, etc.) events to other AWS and EC2 services. My role on this project is to design, lead, and implement the migration of legacy (thread-pool based) streaming services onto a clustered, actor system. The goal of this project is to unlock higher reliability, faster development, and faster service-onboarding speeds.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Amazon}{Seattle, WA}
+      {Software Development Engineer II (Digital Services)}{Jan 2021 - Oct 2021 (10 months)}
+      \resumeItemListStart
         \resumeItem{Discovery}
-          {Discovery is a Java, Tomcat, RPC service that serves up over 100,000+ RPS of traffic. It's purpose is to aggregate and cache data from various downstream systems so that internal Amazon customers can query and transform that data (in-app, using our "docket" technology) into a custom product object for their particular business. My contribution to this service is to act as the team's tech lead, responsible for implementing new features (ie. 1:n offers), downstream data sources (ie. collections), and resolve operational issues (ie. resolving media-central service problems).}
+          {Discovery is a Java, Tomcat, RPC service that serves up over 100,000+ RPS of traffic. It's purpose is to power Amazon's digital catalog services by aggregating and caching product metadata from many downstream systems. We maintain a proprietary transformation technology (``dockets'') that allows customers the ability to query and transform product metadata into a ``product'' for their business. I assumed the role as tech lead for the team, designed and implemented new features (1:n offers, collections, etc.), and helped drive down the operational burdens on the team.}
+        \resumeItem{Collections}
+          {Collections is a Java, Gremlin, Neptune, RPC service that enhances Amazon's digital catalog services by providing customers and services a means to build relationships amongst data (via graph database). This technology currently powers Alexa's skill categorization service, but we intended it to handle many other use-cases like product-bundling, classifications, hierarchies, and graph traversals. My role on this project was to course-correct, redesign/refactor, and operationalize the system.}
+        \resumeItem{LaunchPad}
+          {LaunchPad is a TypeScript, NextJS, Java, GraphQL, RPC service that allows Amazon teams to develop custom, product detail pages using JSON and code artifacts. This service speeds up delivery and development of detail pages from quarters to mere weeks. My contributions towards this project is leading both frontend and backend development of the service, as well as leading customer onboarding and delivery into production.}
       \resumeItemListEnd
 
     \resumeSubheading

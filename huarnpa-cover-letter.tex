@@ -1,0 +1,137 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Long Lined Cover Letter
+% LaTeX Template
+% Version 2.0 (September 17, 2021)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Authors: Fanchao Chen
+% (chenfc@fudan.edu.cn)
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{article}
+
+\usepackage{charter} % Use the Charter font
+
+\usepackage[
+	a4paper, % Paper size
+	top=1in, % Top margin
+	bottom=1in, % Bottom margin
+	left=1in, % Left margin
+	right=1in, % Right margin
+	%showframe % Uncomment to show frames around the margins for debugging purposes
+]{geometry}
+
+\setlength{\parindent}{0pt} % Paragraph indentation
+\setlength{\parskip}{1em} % Vertical space between paragraphs
+
+\usepackage{graphicx} % Required for including images
+
+\usepackage{fancyhdr} % Required for customizing headers and footers
+
+\usepackage{hyperref}
+
+\fancypagestyle{firstpage}{%
+	\fancyhf{} % Clear default headers/footers
+	\renewcommand{\headrulewidth}{0pt} % No header rule
+	\renewcommand{\footrulewidth}{1pt} % Footer rule thickness
+}
+
+\fancypagestyle{subsequentpages}{%
+	\fancyhf{} % Clear default headers/footers
+	\renewcommand{\headrulewidth}{1pt} % Header rule thickness
+	\renewcommand{\footrulewidth}{1pt} % Footer rule thickness
+}
+
+\AtBeginDocument{\thispagestyle{firstpage}} % Use the first page headers/footers style on the first page
+\pagestyle{subsequentpages} % Use the subsequent pages headers/footers style on subsequent pages
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	FIRST PAGE HEADER
+%----------------------------------------------------------------------------------------
+
+%\includegraphics[width=0.4\textwidth]{fudan.png} % Logo
+
+\vspace{-1em} % Pull the rule closer to the logo
+
+\rule{\linewidth}{1pt} % Horizontal rule
+
+\bigskip\bigskip % Vertical whitespace
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\hfill
+\begin{tabular}{l @{}}
+	\today \bigskip\\ % Date
+	Patrick Huarng \\
+	9401 178th Place, Unit 1 \\ % Address
+	Redmond, WA. 98052 \\
+	Phone: (312) 799-9542 \\
+	Email: huarngpa@gmail.com
+\end{tabular}
+
+\bigskip % Vertical whitespace
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE AND GREETING
+%----------------------------------------------------------------------------------------
+
+% \begin{tabular}{@{} l}
+% 	Mrs.\ XXX \\
+% 	Recruitment Officer \\
+% 	The Corporation \\
+% 	123 Pleasant Lane \\
+% 	City, State 12345
+% \end{tabular}
+
+\bigskip % Vertical whitespace
+
+Dear Moonshot,
+
+\bigskip % Vertical whitespace
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+It's not often that you find a job posting that piques your interest. And it's even less frequent that you find an idea that inspires you.
+
+Reference: \url{https://x.company/blog/posts/why-the-electric-grid-needs-a-moonshot/}
+
+It might not be much at this point in my journey, but here's how I could help X (Alphabet):
+
+\begin{itemize}
+  \item Broad experience across many industries (including energy/utilities) from my time as a management consultant
+  \item Ability to deliver results (see attached Resume)
+  \item Expertise in data ingestion technologies
+  \item Expertise in functional programming paradigms
+  \item Expertise in Akka (actor systems), which can be useful for modeling complex interactions
+  \item Expertise in graph database technologies, which can further model and traverse relationships amongst data
+\end{itemize}
+
+Thank you for your consideration!
+
+\bigskip % Vertical whitespace
+
+Sincerely,
+
+\vspace{50pt} % Vertical whitespace
+
+Fellow Dreamer
+
+\end{document}
