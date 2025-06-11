@@ -68,7 +68,6 @@
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \begin{document}
 
 %----------HEADING-----------------
@@ -76,7 +75,6 @@
   \textbf{\href{https://github.com/huarngpa/}{\Large Patrick Huarng}} & Email : \href{mailto:huarngpa@gmail.com}{huarngpa@gmail.com}\\
   \href{https://github.com/huarngpa}{https://github.com/huarngpa} & Mobile : +1-248-515-7069 \\
 \end{tabular*}
-
 
 %-----------EDUCATION-----------------
 \section{Education}
@@ -92,29 +90,24 @@
       {Bachelor of Arts in Finance;  GPA: 3.5}{Aug. 2007 -- May. 2011}
   \resumeSubHeadingListEnd
 
-
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
       {Amazon Web Services (AWS)}{Seattle, WA}
-      {Software Development Engineer III (EC2)}{Sep 2024 - Present}
+      {Senior Software Development Engineer - SDE III (EC2)}{October 2021 - Present}
       \resumeItemListStart
         \resumeItem{SnowTube}
-          {Lead the development of data services for the EC2 core platform. Currently working on AI agents, new streaming capabilities, and scaling the existing data services.}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Amazon Web Services (AWS)}{Seattle, WA}
-      {Software Development Engineer II (EC2)}{Oct 2021 - Sep 2024}
-      \resumeItemListStart
-        \resumeItem{SnowTube}
-          {SnowTube is a realtime, streaming service that powers the EC2 core platform by ingesting and distributing EC2 resource (ie. Virts, VPC, AMI, etc.) events to other AWS and EC2 services. I am the tech lead for the team and have been responsible for the following projects: developing custom clustering capabilities, building out new service components for publishing data, improving the codebase and development practices (JDK17, Kotlin, etc.), root-causing and driving down the system's operational burden, and onboarding new users to the system.}
+          {Architected and led the development of SnowTube, a low-latency, Flink-like streaming and clustering system powering EC2's core platform, processing petabyte-scale EC2 resource events (e.g., Virts, VPC, AMI). Achieved sub-second latency and 99.99\% uptime. Currently leading a project leveraging this system to save \$1M annually by optimizing compute resource usage. Migrating streaming infrastructure from custom JournalDB technology to SNS/SQS, enabling unlimited fanout and throughput. Spearheading a new service (and team) to build Kafka clusters for SnowTube and the EC2 organization.}
+        \resumeItem{OpenSearch Adoption}
+          {Led EC2's migration from MySQL to OpenSearch, managing self-hosted clusters to support ad-hoc NoSQL queries for 10+ resources (AMIs, VPCs, etc.). Enabled AWS’s strategy to deprecate MySQL clusters. Ensured latency-sensitive queries were the same or better than MySQL, enhancing platform scalability and performance.}
+        \resumeItem{Innovative Contributions}
+          {Leveraged frontend expertise to guide adjacent EC2 teams in building robust React applications, upskilled 2+ team members. Developed RAG and agentic applications to query OpenSearch and internal documentation, improving user interaction and team efficiency for internal EC2 teams. Handling these projects outside core responsibilities, when time permits.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Amazon}{Seattle, WA}
-      {Software Development Engineer II (Digital Services)}{Jan 2021 - Oct 2021 (10 months)}
+      {Software Development Engineer - SDE II (Digital Services)}{Jan 2021 - Oct 2021 (10 months)}
       \resumeItemListStart
         \resumeItem{Discovery}
           {Discovery is a Java, Tomcat, RPC service that serves up over 100,000+ RPS of traffic. It's purpose is to power Amazon's digital catalog services by aggregating and caching product metadata from many downstream systems. We maintain a proprietary transformation technology (``dockets'') that allows customers the ability to query and transform product metadata into a ``product'' for their business. I assumed the role as tech lead for the team, designed and implemented new features (1:n offers, collections, etc.), and helped drive down the operational burdens on the team.}
@@ -176,34 +169,22 @@
       {Information Services Group (ISG)}{Detroit, MI; Stamford, CT; Chicago, IL}
       {Consulting Manager}{Dec 2011 - Apr 2019 (8+ years)}
       \resumeItemListStart
-        \resumeItem{Strategy \& Technology Consulting}
-          {Specialist in transaction advisory and cloud advisory. In my consulting career I have been ranked as a top-five consultant in the firm and have been awarded the chairman's club honor twice (an honor given to less than 2\% of the company annually).}
+        \resumeItem{Strategy \& Digital Advisory}
+          {Specialized in strategy, digital advisory (agile, cloud), outsourcing transaction advisory, and research across Financial Services, Technology, Insurance, Pharmaceutical, Air Delivery, Healthcare, Real-Estate, and Automotive industries. Ranked top-five consultant firm-wide, earning Chairman’s Club honors twice (less than 2\% of firm annually). Advised clients on cloud migration to AWS/Azure, leading migration planning and cost analysis (e.g., data center TCO vs. cloud). Led agile transformation for a payments company over three engagements, driving process changes and vendor selection. Conducted research on process automation and data analytics, facilitating outsourcing transactions. Regularly published in ISG Insights on automation and agile.}
+        \resumeItem{Software Development}
+          {Developed ETL scripts, business analytics dashboards, and thick-client applications for rapid data processing, enhancing client reporting and operational efficiency.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
-
-
-%-----------PROJECTS-----------------
-\section{Projects}
-  \resumeSubHeadingListStart
-    \resumeSubItem{Project Nora (2020)}
-      {Mobile and web application that allows a user to enqueue from anywhere in the world. My contributions to the system are primarily backend-related work on: AWS, Terraform, Docker, TypeScript, NodeJS, Sequelize, PostgreSQL, and Next.js.}
-    \resumeSubItem{BeautyShelf (2019)}
-      {Mobile and web application that keeps track of makeup expiry (\href{https://beautyshelf.app}{beautyshelf.app}). Developed the entire web front-and-backend systems in React, Flask (Python), Docker, and AWS.}
-    \resumeSubItem{Twitter-Stocks (2019)}
-      {Big-data, Lambda architecture based system with ingestion, batch, serving, speed, and web layers. Built using Kafka, Spark (Scala), Hive, HBase, Flask (Python), and VueJS.}
-  \resumeSubHeadingListEnd
-
 
 %--------PROGRAMMING SKILLS------------
 \section{Programming Skills (Interests)}
   \resumeSubHeadingListStart
     \resumeSubItem{Programming Languages}
-      {Scala, Java, TypeScript, JavaScript, SQL, Python}
+      {Kotlin, Java, Scala, TypeScript, JavaScript, SQL, Python}
     \resumeSubItem{Technologies}
-      {AWS, Kubernetes, Terraform, CircleCI, Akka, Lagom, Play, Guice, DynamoDB, PostgreSQL, NodeJS, React, NextJS, Kafka}
+      {AWS, CDK, Kubernetes, Terraform, GitHub, CircleCI, Akka (Pekko), DynamoDB, PostgreSQL, NodeJS, React, NextJS, Kafka, OpenSearch, SNS/SQS}
   \resumeSubHeadingListEnd
-
 
 %-------------------------------------------
 \end{document}
